@@ -1,7 +1,7 @@
 body {
   max-width: 1440px;
   height: 1366px;
-  background: #2A2731;
+  background: #4E4957;
   border-radius: 10px; }
 
 a {
@@ -10,7 +10,7 @@ a {
 .center {
   width: 802px;
   height: 1366px;
-  background: #17151C;
+  background: #2A2731;
   border-radius: 10px;
   margin: 0 496px 0 142px; }
 
@@ -64,26 +64,67 @@ a {
 
 #segments {
   display: flex;
-  align-items: center;
   justify-content: space-between; }
 
 .name {
+  text-align: top;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
   line-height: 44px;
-  letter-spacing: -0.56px;
   margin-left: 24px;
   color: #EEECF1;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.48); }
 
+.text {
+  display: inline;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  color: #7A7585;
+  text-align: center; }
+
 #segment-icons {
   width: 476px;
   height: 48px;
-  background: #2A2731;
+  background: #17151C;
   border-radius: 10px;
-  margin-right: 24px; }
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+#icon:first-child {
+  margin-left: 4px; }
+
+#icon:last-child {
+  margin-right: 4px; }
+
+#icon {
+  width: 153px;
+  height: 40px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px; }
+
+#segment-icons .tickets:hover, .holidays:hover, .planner:hover {
+  background: #3C3844;
+  border-radius: 10px; }
+  #segment-icons .tickets:hover .text, .holidays:hover .text, .planner:hover .text {
+    color: #EEECF1; }
+  #segment-icons .tickets:hover .line, .holidays:hover .line, .planner:hover .line {
+    border: none; }
+
+.line {
+  width: 28.8px;
+  border: 1px solid #4E4957;
+  transform: rotate(-90deg);
+  margin-right: -20px;
+  float: right;
+  margin-top: 20px; }
 
 @media (max-width: 360px) {
   body {
