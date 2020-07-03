@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="center">
+    <div id="column-1">
       <header class="header">
            <a id="header-logo" href="index.html">
              <svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,45 +17,217 @@
  </svg>
            </a>
            <nav id="navigation">
-             <button class="header-button">Inbox</button>
-             <button class="header-button active">Flights</button>
-             <button class="header-button">To-Do</button>
-             <button class="header-button">Meeting</button>
-             <button class="header-button">Settings</button>
+             <a href="#" class="header-button">
+               Inbox
+             </a>
+             <a href="#" class="header-button">
+               Flights
+             </a>
+             <a href="#" class="header-button">
+               To-Do
+             </a>
+             <a href="#" class="header-button">
+               Meeting
+             </a>
+             <a href="#" class="header-button">
+               Settings
+             </a>
            </nav>
       </header>
-      <div id="segments">
+      <main>
+      <div id="segmented-control">
         <div class="name">
           Pick a day
         </div>
-        <div id="segment-icons">
-          <a href="#" id="icon" class="tickets">
-            <p class="text">
-              Tickets
-            </p>
-            <div class="line">
-            </div>
-          </a>
-
-
-          <a href="#" id="icon" class="holidays">
-            <p class="text">
-              Holidays
-            </p>
-            <div class="line">
-            </div>
-          </a>
-
-          <a href="#" id="icon" class="planner">
-            <p class="text">
-              Planner
-            </p>
-          </a>
-
-
-
+        <div id="segmented-control-icons">
+            <a href="#" id="icon" class="tickets">
+                <span class="text">
+                  Tickets
+                </span>
+                <i class="line"></i>
+            </a>
+            <a href="#" id="icon" class="holidays">
+                <span class="text">
+                  Holidays
+                </span>
+                <i class="line"></i>
+            </a>
+            <a href="#" id="icon" class="planner">
+                <span class="text">
+                  Planner
+                </span>
+            </a>
         </div>
+
+
+<!--
+<div id="segmented-control-icons">
+    <a href="#" id="icon" class="tickets">
+        <span class="text">
+          Tickets
+        </span>
+    </a>
+    <a href="#" id="icon" class="holidays">
+        <span class="text">
+          Holidays
+        </span>
+    </a>
+    <a href="#" id="icon" class="planner">
+        <span class="text">
+          Planner
+        </span>
+    </a>
+</div>
+-->
+
       </div>
+
+
+      <div class="calendar">
+        <div id="calendar-type">
+          <a href="#" class="type-button">
+            <span class="text-button">
+              One way
+            </span>
+          <a href="#" class="type-button">
+            <span class="text-button">
+              Return
+            </span>
+          </a>
+        </div>
+
+<div id="calendars">
+  <a href="#" class="arrow">
+    <img src="images/calendar-left.svg" class="arrow-left">
+  </a>
+        <table class="first-calendar">
+          <tr class="table-title">
+            <th colspan="7">May 2019</th>
+          </tr>
+          <tr class="table-days">
+            <th>SUN</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+
+        <table class="second-calendar">
+          <tr class="table-title">
+            <th colspan="7">May 2019</th>
+          </tr>
+          <tr class="table-days">
+            <th>SUN</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <a href="#" class="arrow">
+          <img src="images/calendar-right.svg" class="arrow-right">
+        </a>
+
+</div>
+
+      </div>
+    </main>
     </div>
 
   </body>
