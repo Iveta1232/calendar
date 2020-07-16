@@ -102,7 +102,7 @@
             <a href="#" class="arrow">
               <img src="images/calendar-left.svg" class="arrow-left">
             </a>
-            <table class="first-calendar">
+            <table class="first-calendar table-calendar">
               <tr class="table-title">
                 <th colspan="7">May 2019</th>
               </tr>
@@ -161,7 +161,7 @@
                 <td>1</td>
               </tr>
             </table>
-            <table class="second-calendar">
+            <table class="second-calendar table-calendar">
               <tr class="table-title">
                 <th colspan="7">May 2019</th>
               </tr>
@@ -225,7 +225,92 @@
             </a>
           </div>
         </div>
-        <div class="search-forms">
+        <div class="search-form">
+          <input id="destination" class="search-form-text" type="text" name="destination" placeholder="Paris, France - Pupkino, RUS">
+            <label for="destination">
+              <img class="destination-icon" src="images/destination.svg">
+            </label>
+          <input id="date" class="search-form-text" type="text" name="date" placeholder="May, 2 - May, 21">
+            <label for="date">
+              <img class="date-icon" src="images/date.svg">
+            </label>
+            <select id="people" class="search-form-text">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adult</option>
+            </select>
+            <label for="people">
+              <img class="people-icon" src="images/people.svg">
+            </label>
+            <button class="search-form-button">
+              <img src="images/search-button.svg">
+            </button>
+        </div>
+        <div class="medium-heading">
+          <p class="medium-heading-title">
+            Time Selector
+          </p>
+          <p class="medium-heading-body">
+            Choose a time period to plan your task
+          </p>
+          <a href="#" class="setting-icon">
+            <img class="medium-heading-icon" src="images/settings.svg">
+          </a>
+        </div>
+        <div class="time-selector">
+          <div class="time-selector-header">
+            <p class="time-selector-title">
+              Pick a time interval
+            </p>
+            <div class="time-selector-date">
+              <a href="#" class="arrow-time-selector">
+                <img src="images/arrow-time-sel.svg">
+              </a>
+              <p class="date-text">
+              December, 24
+              </p>
+              <a href="#" class="arrow-time-selector">
+                <img class="arrow-time-right" src="images/arrow-time-sel.svg">
+              </a>
+            </div>
+          </div>
+          <table class="time-table">
+            <tr class="time-table-day">
+              <th>MORNING</th>
+              <th>AFTERNOON</th>
+              <th>EVENING</th>
+              <th>NIGHT</th>
+            </tr>
+            <tr class="table-time-selector">
+              <td>7:00 AM</td>
+              <td>12:00 PM</td>
+              <td>5:00 PM</td>
+              <td>10:00 PM</td>
+            </tr>
+            <tr class="table-time-selector">
+              <td>8:00 AM</td>
+              <td>1:00 PM</td>
+              <td>6:00 PM</td>
+              <td>10:30 PM</td>
+            </tr>
+            <tr class="table-time-selector">
+              <td>9:00 AM</td>
+              <td>2:00 PM</td>
+              <td>7:00 PM</td>
+              <td>11:00 PM</td>
+            </tr>
+            <tr class="table-time-selector">
+              <td>10:00 AM</td>
+              <td>3:00 PM</td>
+              <td>8:00 PM</td>
+              <td>11:30 PM</td>
+            </tr>
+            <tr class="table-time-selector">
+              <td>11:00 AM</td>
+              <td>4:00 PM</td>
+              <td>9:00 PM</td>
+              <td>12:00 AM</td>
+            </tr>
+          </table>
         </div>
       </main>
     </div>
